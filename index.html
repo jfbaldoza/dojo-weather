@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="logo">DojoWeather</p>
+        <nav>
+            <ul class="city-links">
+                <li class="burbank" onclick="city()">Burbank</li>
+                <li class="chicago" onclick="city()">Chicago</li>
+                <li class="dallas" onclick="city()">Dallas</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="top">
+            <p class="city">San Jose</p>
+            <form action="#">
+                <label for="temp"><b>show temperature in</b></label>
+                <select id="temp" name="temperature">
+                    <option value="celsius">Celsius</option>
+                    <option value="farenheight">Farenheight</option>
+                </select>
+            </form>
+        </div>
+        <div class="bottom">
+            <div class="days">
+                <h2>Today</h2>
+                <img src="./assets/some_rain.png" alt="rain imgs">
+                <p>some rain</p>
+                <div class="degree">
+                    <p class="left-degree">24°</p>
+                    <p class="right-degree">18°</p>
+                </div>
+            </div>
+            <div class="days">
+                <h2>Tomorrow</h2>
+                <img src="./assets/some_sun.png" alt="sun imgs">
+                <p>some sun</p>
+                <div class="degree">
+                    <p class="left-degree">88°</p>
+                    <p class="right-degree">66°</p>
+                </div>
+            </div>
+            <div class="days">
+                <h2>Friday</h2>
+                <img src="./assets/some_clouds.png" alt="cloud imgs">
+                <p>some rain</p>
+                <div class="degree">
+                    <p class="left-degree">69°</p>
+                    <p class="right-degree">61°</p>
+                </div>
+            </div>
+            <div class="days">
+                <h2>Saturday</h2>
+                <img src="./assets/some_sun.png" alt="sun imgs">
+                <p>some rain</p>
+                <div class="degree">
+                    <p class="left-degree">78°</p>
+                    <p class="right-degree">70°</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="cookie">
+        <img src="./assets/cookie.png" alt="cookie image">
+        <div class="cookie-message">
+            <h2>Stop! Cookie time</h2>
+            <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+        </div>
+        <button onclick="acceptBTN()">I Accept</button>
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
